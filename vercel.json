@@ -1,15 +1,8 @@
 {
-  "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "api/notify.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/notify",
-      "dest": "/api/notify.py"
+      "source": "/:path*",
+      "destination": "/api/:path*"
     }
   ]
 }
