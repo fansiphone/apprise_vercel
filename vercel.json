@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/:path*",
-      "destination": "/api/notify.py"
+      "destination": "/api/:path*"
     }
   ]
 }
